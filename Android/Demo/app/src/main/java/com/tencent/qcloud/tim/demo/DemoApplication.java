@@ -69,7 +69,7 @@ public class DemoApplication extends MultiDexApplication {
     public void setPermissionRequestContent() {
         ApplicationInfo applicationInfo = getApplicationInfo();
         CharSequence labelCharSequence = applicationInfo.loadLabel(getPackageManager());
-        String appName = "App";
+        String appName = "AgimaIM";
         if (!TextUtils.isEmpty(labelCharSequence)) {
             appName = labelCharSequence.toString();
         }
