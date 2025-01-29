@@ -1,6 +1,15 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 import org.gradle.util.VersionNumber
-
+buildscript {
+ repositories {
+     mavenCentral()
+     maven { url "https://mirrors.tencent.com/nexus/repository/maven-public/" }
+ }
+ dependencies {
+     classpath 'com.android.tools.build:gradle:7.0.0'
+     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+ }
+}
 buildscript {
     repositories {
         mavenCentral()
